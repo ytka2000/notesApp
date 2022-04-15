@@ -1,0 +1,14 @@
+.table-header .icon {
+	cursor: auto;
+}
+
+.icons-block {
+	display: flex;
+	justify-content: end;
+}
+
+.icon {
+	height: 2rem;
+	cursor: pointer;
+	margin-right: 10px;
+}

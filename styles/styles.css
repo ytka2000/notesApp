@@ -1,0 +1,19 @@
+@import url("table.css");
+@import url("active-table");
+@import url("archived-table");
+@import url("icons.css");
+@import url("summary-table");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.main-container {
+	margin: 50px;
+	position: relative;
+}

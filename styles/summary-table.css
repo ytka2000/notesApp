@@ -1,0 +1,4 @@
+.summary-table .row {
+	display: grid;
+	grid-template-columns: 1fr 3fr repeat(3, 2fr);
+}

@@ -1,0 +1,11 @@
+.active-table .row {
+	display: grid;
+	grid-template-columns: 1fr 3fr repeat(3, 2fr) 3fr 2fr;
+}
+
+#add-note {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	padding: 5px 15px;
+}
