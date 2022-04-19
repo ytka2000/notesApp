@@ -67,4 +67,6 @@ const summaryNotes = [
 	},
 ];
 
-export { activeNotes, archivedNotes, summaryNotes };
+const categories = ["Task", "Random Thought", "Idea", "Quote"];
+
+export { activeNotes, archivedNotes, summaryNotes, categories };
