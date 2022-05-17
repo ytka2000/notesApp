@@ -1,6 +1,7 @@
 import openModal from "../modalWindow/openModal";
 import deleteNote from "./deleteNote";
 import archiveNote from "./archiveNote";
+import unarchiveNote from "./unarchiveNote";
 import closeModal from "../modalWindow/closeModal";
 
 function userAction(element) {
@@ -14,6 +15,8 @@ function userAction(element) {
 		deleteNote(element);
 	} else if (elemClasses.contains("archive")) {
 		archiveNote(element);
+	} else if (elemClasses.contains("unarchive")) {
+		unarchiveNote(element);
 	} else if (elemClasses.contains("modal-cancel")) {
 		closeModal();
 	}

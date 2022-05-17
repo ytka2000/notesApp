@@ -7,11 +7,11 @@ function loadArchivedNotes() {
 	const archivedNotesElements = archivedNotes.map(note => {
 		const noteElement = `<div class="row">
         <div></div>
-        <div>${note.name}</div>
-        <div>${note.createdOn}</div>
-        <div>${note.category}</div>
-        <div>${note.content}</div>
-        <div>${note.dates}</div>
+        <div class="note-name">${note.name}</div>
+        <div class="note-created-on">${note.createdOn}</div>
+        <div class="note-category">${note.category}</div>
+        <div class="note-content">${note.content}</div>
+        <div class="note-dates">${note.dates}</div>
         ${icons}
         </div>`;
 

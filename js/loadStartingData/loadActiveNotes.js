@@ -11,7 +11,7 @@ function loadActiveNotes() {
         <div class="note-created-on">${note.createdOn}</div>
         <div class="note-category">${note.category}</div>
         <div class="note-content">${note.content}</div>
-        <div>${note.dates}</div>
+        <div class="note-dates">${note.dates}</div>
         ${icons}
         </div>`;
 

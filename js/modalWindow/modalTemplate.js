@@ -1,6 +1,6 @@
 import { categories } from "../config";
 
-function modalTemplate(element, data) {
+function modalTemplate(data) {
 	let name, category, content;
 	if (data) {
 		({ name, category, content } = data);
@@ -10,9 +10,9 @@ function modalTemplate(element, data) {
                 <form>
                     <div class="modal-input note-name-block">
                         <label for="note-name">Name</label>
-                        <input type="text" id="note-name" value=${
+                        <input type="text" id="note-name" value='${
 													name ? name : ""
-												}>
+												}'>
                     </div>
                     <div class="modal-input note-category-block">
                         <label for="note-category">Category</label>
@@ -20,7 +20,7 @@ function modalTemplate(element, data) {
                         ${categories.map(categ => {
 													const selected =
 														category === categ ? "selected" : null;
-													return `<option value=${categ} ${selected}=>${categ}</option>`;
+													return `<option value='${categ}' ${selected}=>${categ}</option>`;
 												})}
                         </select>
                     </div>

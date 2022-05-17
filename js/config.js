@@ -56,14 +56,28 @@ const summaryNotes = [
 	{
 		icon: "",
 		noteCategory: "Task",
-		active: 13,
-		archived: 4,
+		active: 2,
+		archived: 1,
 	},
 	{
 		icon: "",
 		noteCategory: "Random Thought",
-		active: 7,
-		archived: 12,
+		active: 1,
+		archived: 0,
+	},
+	,
+	{
+		icon: "",
+		noteCategory: "Idea",
+		active: 1,
+		archived: 0,
+	},
+	,
+	{
+		icon: "",
+		noteCategory: "Quote",
+		active: 1,
+		archived: 0,
 	},
 ];
 

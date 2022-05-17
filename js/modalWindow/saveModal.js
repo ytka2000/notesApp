@@ -11,7 +11,6 @@ function saveModal(elementToEdit) {
 		}
 		closeModal();
 	} catch (error) {
-		console.log(error);
 		console.error(new Error("Something went wrong!"));
 	}
 }

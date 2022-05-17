@@ -6,18 +6,18 @@ function openModal(element) {
 		let data;
 		if (element) {
 			const note = element.closest(".row");
-			const name = note.querySelector(".note-name").innerText;
+			const noteName = note.querySelector(".note-name").innerText;
 			const category = note.querySelector(".note-category").innerText;
 			const content = note.querySelector(".note-content").innerText;
 
 			data = {
-				name: name,
+				name: noteName,
 				category: category,
 				content: content,
 			};
 		}
 
-		const modal = modalTemplate(element, data);
+		const modal = modalTemplate(data);
 
 		document
 			.querySelector(".main-container")
@@ -27,7 +27,7 @@ function openModal(element) {
 			saveModal(element);
 		});
 	} catch (error) {
-		console.error(new Error("The delete operation cannot be conducted!"));
+		console.error(new Error("The operation cannot be conducted!"));
 	}
 }
 
